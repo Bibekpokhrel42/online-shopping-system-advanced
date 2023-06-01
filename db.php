@@ -1,9 +1,9 @@
 <?php
 
-$servername = "zerone-addon-39-6-mariadb.zerone-5-39.svc.cluster.local";
-$username = "root";
-$password = "Bibek@1234";
-$db = "onlineshop";
+$servername = getenv("DB_HOST")?:"localhost";
+$username = getenv("DB_USER")?:"root";
+$password = getenv("DB_PASS")?:"";
+$db = getenv("DB_NAME")?:"onlineshop";
 
 // Create connection
 $con = mysqli_connect($servername, $username, $password,$db);
