@@ -1,8 +1,8 @@
 <?php
 
-$servername = "localhost";
+$servername = "zerone-addon-39-6-mariadb.zerone-5-39.svc.cluster.local";
 $username = "root";
-$password = "";
+$password = "Bibek@1234";
 $db = "onlineshop";
 
 // Create connection
